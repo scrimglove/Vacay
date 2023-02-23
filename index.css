@@ -1,0 +1,147 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+
+}
+
+p {
+	font-size: 20px;
+}
+
+.lnk {
+	text-decoration: none;
+	cursor: pointer;
+	color: green;
+}
+
+.lnk1:hover {
+	text-decoration: underline;
+}
+
+.header {
+	background-image: url(central-p.jpg);
+	color: white;
+	background-size: cover; 
+	height: 380px;
+	margin: -22px 0 0;
+}
+
+.word-wrp {
+	padding: 120px 0 0;
+	font-family: 'Happy Monkey', cursive;
+	text-shadow: 0 0 1px black;
+}
+
+.main {
+	margin: 0;
+	display: flex;
+	background: linear-gradient(skyblue, white);
+	justify-content: space-around;
+	font-family: 'Shantell Sans', cursive;
+}
+
+.mn-wrp {
+	color: green;
+	margin: -18px 0 0;
+}
+
+.lion-img {
+	background-image: url("two-male-lions-Kenya.jpg");
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: -15px 0 5px;
+}
+
+#lk:hover {
+	background-image: url("lion-king.jpg");
+	background-size: cover;
+	filter: drop-shadow(-5px 5px 5px #222);
+}
+
+.tiger-img {
+	background-image: url("tig-idealized.jpg");
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: -15px 0 5px;	
+}
+
+#cp:hover {
+	background-image: url("cage.jpg");
+	background-size: cover;
+	filter: drop-shadow(0 5px 5px #222);
+}
+
+.bear-img {
+	background-image: url("bear-fam.jpg");
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: -15px 0 5px;		
+}
+
+#tst:hover {
+	background-image: url("nyc-pride-3.jpg");
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+.grass {
+	margin: 0;
+	background-image: url("trip.webp");
+	background-size: cover;
+	color: white;
+	font-family: Babylonica;
+	text-shadow: 0 0 1px black;
+	font-size: 40px;
+	padding: 1px;
+}
+
+.footer {
+	background: linear-gradient(to right, darkblue, lightpink);
+	height: 236px;
+	padding: 3px;
+}
+
+.card {
+    border-bottom: 6px solid #adf5ff;
+	background: #57a6b3;
+	background-size: cover;
+	color: #bdbdbd;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	font-family: 'Orbitron', sans, serif;
+	width: 500px;
+	margin: 0 auto;
+	border-radius: 10px;
+	padding: 2px 2px 0;
+}
+
+.column {
+	margin: 2px 2px 0;
+	padding: 2px 2px 0;
+	text-shadow: 0 0 1px black;
+}
+
+.avatar {
+	width: 200px;
+	height: 210px;
+	border-radius: 10px;
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+/*background: cover; stretches	 image to width of browser */
