@@ -10,6 +10,19 @@ DARK BLUE: #1D3557
 
 .main {
 	--columns: repeat(3, 1fr);
+	--mwidth: 12.5em;
+	--mheight: 12.5em;
+	--mmargin: 0;
+	--mimargin: -15px 7em 5px;
+}
+
+.header {
+	--bsize: cover;
+	--hheight: 20.46em;
+}
+
+.word-wrp {
+	--wpad: 120px 0 0;
 }
 
 body {
@@ -18,9 +31,9 @@ body {
 
 }
 
-p {
+/* p {
 	font-size: 20px;
-}
+} */
 
 .lnk {
 	text-decoration: none;
@@ -35,19 +48,27 @@ p {
 .header {
 	background-image: url(central-p.jpg);
 	color: white;
-	background-size: cover; 
-	height: 380px;
+	background-size: var(--bsize); 
+	height: var(--hheight);
 	margin: -22px 0 0;
 }
 
+.title {
+	font-size: var(--osize);
+}
+
+.sub {
+	font-size: var(--tsize);
+}
+
 .word-wrp {
-	padding: 120px 0 0;
+	padding: var(--wpad);
 	font-family: 'Happy Monkey', cursive;
 	text-shadow: 0 0 1px black;
 }
 
 .main {
-	margin: 0;
+	margin: var(--mmargin);
 	/* display: flex;
 	justify-content: space-around; */
 	display: grid;
@@ -66,10 +87,10 @@ p {
 .lion-img {
 	background-image: url("two-male-lions-Kenya.jpg");
 	background-size: cover;
-	width: 200px;
-	height: 200px;
+	width: var(--mwidth);
+	height: var(--mheight);
 	border-radius: 50%;
-	margin: -15px 0 5px;
+	margin: var(--mimargin);
 }
 
 #lk:hover {
@@ -81,10 +102,10 @@ p {
 .tiger-img {
 	background-image: url("tig-idealized.jpg");
 	background-size: cover;
-	width: 200px;
-	height: 200px;
+	width: var(--mwidth);
+	height: var(--mheight);
 	border-radius: 50%;
-	margin: -15px 0 5px;	
+	margin: var(--mimargin);
 }
 
 #cp:hover {
@@ -96,10 +117,10 @@ p {
 .bear-img {
 	background-image: url("bear-fam.jpg");
 	background-size: cover;
-	width: 200px;
-	height: 200px;
+	width: var(--mwidth);
+	height: var(--mheight);
 	border-radius: 50%;
-	margin: -15px 0 5px;		
+	margin: var(--mimargin);
 }
 
 #tst:hover {
@@ -111,17 +132,18 @@ p {
 	margin: 0;
 	background-image: url("trip.webp");
 	background-size: cover;
+	height: 42px;
 	color: white;
 	font-family: Babylonica;
 	text-shadow: 0 0 1px black;
 	font-size: 40px;
-	padding: 1px;
+	padding: 0.4em;
 }
 
 .footer {
 	background: linear-gradient(to right, darkblue, lightpink);
-	height: 236px;
-	padding: 3px;
+	height: 11em;
+	padding: 1px;
 }
 
 .card {
@@ -133,7 +155,7 @@ p {
 	justify-content: space-around;
 	text-align: center;
 	font-family: 'Orbitron', sans, serif;
-	width: 500px;
+	width: 26.25em;
 	margin: 0 auto;
 	border-radius: 10px;
 	padding: 2px 2px 0;
@@ -147,14 +169,25 @@ p {
 
 .avatar {
 	width: 200px;
-	height: 210px;
+	height: 155px;
 	border-radius: 10px;
 	filter: drop-shadow(5px 5px 5px #222);
 }
 
 @media all and (max-width: 450px) {
-	.grid {
+	.main {
 		--columns: 1fr;
+		--mwidth: 400px;
+		--mheight: 400px;
+		--mmargin: -20px 0 0;
+		--mimargin: -15px 10px 5px;
+	}
+	.header {
+		--bsize: 100%;
+		--hheight: 100%;
+	}
+	.word-wrp {
+		--wpad: 0;
 	}
 }	
 
