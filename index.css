@@ -8,6 +8,10 @@ DARK BLUE: #1D3557
 
 */
 
+.main {
+	--columns: repeat(3, 1fr);
+}
+
 body {
     margin: 0;
     text-align: center;
@@ -44,9 +48,13 @@ p {
 
 .main {
 	margin: 0;
-	display: flex;
+	/* display: flex;
+	justify-content: space-around; */
+	display: grid;
+    grid-gap: 0.8em;
+    grid-template-columns: var(--columns);
+    grid-template-rows: auto;
 	background: linear-gradient(skyblue, white);
-	justify-content: space-around;
 	font-family: 'Shantell Sans', cursive;
 }
 
@@ -143,5 +151,11 @@ p {
 	border-radius: 10px;
 	filter: drop-shadow(5px 5px 5px #222);
 }
+
+@media all and (max-width: 450px) {
+	.grid {
+		--columns: 1fr;
+	}
+}	
 
 /* 'background: cover;' stretches image to width of browser */
